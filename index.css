@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Shantell Sans', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 1;
+}
+#logo img{
+   height: 8rem;
+   width: 13rem;
+   margin: 0;
+   padding: 0;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar ul li{
+text-decoration: none;
+font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    font-size: 1.1rem;
+    padding: 1px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#navbar ul li a:hover{
+    color:black;
+    background:white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('bg1.jpg')no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    height: 643px;
+    width: 100%;
+    opacity: 0.9 ;
+}
+#home h1{
+    color: white;
+    text-align:center;
+    font-family: 'Tilt Prism',cursive;
+}
+#home p{
+    color: white;
+    font-size: 1.4rem;
+    font-family: 'Tilt Neon', cursive;
+}
+
+
+  /*utility service*/ 
+
+.hprimary{
+    font-size: 3.5rem;
+    padding: 12px;
+    
+}
+#service-container .hprimary {
+    font-family: 'Tilt Neon', cursive;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.btn{
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif ;
+    font-style: italic;
+    border-radius: 15px;
+    border: double 7px;
+    cursor: pointer;
+    transition-duration: 0.3s ease-in-out;
+    background-color:#FF0032;
+}
+.btn:hover{
+    transform:scale(0.6);
+}
+.hsecondry{
+    font-family: 'Tilt Neon', cursive;
+font-size: 1.2rem;
+font-weight:800;
+color: rgb(49, 75, 133);
+padding: 12px;
+}
+.center{
+    text-align: center;
+}
+
+
+/* service */
+#service-container{
+    background-color:rgb(179, 245, 167);
+}
+#service{
+   display: flex;
+   justify-content: space-evenly;
+   padding-bottom: 30px;
+}
+#service .box{
+    background-color: rgb(224, 243, 148);
+    display: block;   
+    border-radius: 22px;
+    text-align: center;
+    border:brown 2px dotted;
+    margin: auto 3rem;
+    padding: 20px;
+
+}
+#service .box img{
+    height: 150px;
+    width: 150px;
+    margin-top: 2rem;
+}
+#service .box img:hover{
+background-color:darkkhaki;
+}
+#service .box p{
+    font-style: oblique;
+    font-family: sans-serif;
+}
+
+
+/*  client section */
+#client-section .hprimary {
+    font-family: 'Tilt Neon', cursive;
+     padding: 35px;
+     font-size: 2.7rem;
+     font-weight:900 ;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('bg.jpg')no-repeat center center/cover;
+    height:333px;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#clients .client1 img{
+    height: 140px;
+    width: 110px;
+}
+#clients .client2 img{
+height: 204px;
+width: 170px;
+}
+#clients .client3 img{
+height: 150px;
+width: 130px;
+}
+#clients .client4 img{
+height: 160px;
+width: 175px;
+}
+
+/* form utilies */
+
+#section-form .hprimary{
+     font-size: 2.5rem;
+     font-family: 'Tilt Neon', cursive;
+     font-weight: 900;
+}
+#section-form::before{
+content: "";
+position: absolute;
+background: url('contact.jpg') no-repeat center center/cover;
+height: 350px;
+width: 100%;
+z-index: -1;
+opacity: 0.4;
+
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form input{
+    height: 20px;
+    width: 350px;
+    border-radius: 5px;
+}
+#form textarea{
+    border-radius: 6px;
+    height: 100px;
+    width:350px;
+}
+#form label{
+    font-size: large;
+    font-weight: bold   ;
+}
+
+footer{
+    margin-top: 20px;
+    position: relative;
+    background: black;
+    color: white;
+}
